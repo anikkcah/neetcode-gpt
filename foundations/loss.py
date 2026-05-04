@@ -21,7 +21,7 @@ class Solution:
         
         sum_ = sum(lst) 
 
-        output = - sum_ / n
+        output = -1 * sum_ / n
 
         return round(output,4)
 
@@ -39,7 +39,7 @@ class Solution:
             for j in range(len(y_true[0])):
                 lst.append(y_true[i][j]*math.log(y_pred[i][j]+math.pow(10,-7)))
 
-        sum_ = - sum(lst) / n
+        sum_ = -1 * sum(lst) / n
 
         return round(sum_,4)
 
